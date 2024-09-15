@@ -1,3 +1,9 @@
+/* Main file for NanoWiki,
+* this is like "The Powerhouse"
+* of the NanoWiki (or alternatively
+* the bane of your existence).
+*/
+
 //go:build ignore
 
 package main
