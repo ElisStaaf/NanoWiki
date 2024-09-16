@@ -11,7 +11,7 @@ cd <NanoWiki directory>
 ./NanoWiki
 ```
 This will run the "NanoWiki.exe" file. Then, open your browser of choice,
-go to the url "localhost:8080/view/" + Whatever page you wanna go to. If the page
+go to the url "localhost:8080/view/<page>". If the page
 doesn't exist, you will be brought to an "/edit/" page, to write it yourself. All
 of the pages will be saved to your computer as "*.txt" files.
 
