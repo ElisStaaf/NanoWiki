@@ -1,4 +1,10 @@
-# NanoWiki - Locally hosted wiki.
+███╗   ██╗ █████╗ ███╗   ██╗ ██████╗ ██╗    ██╗██╗██╗  ██╗██╗
+████╗  ██║██╔══██╗████╗  ██║██╔═══██╗██║    ██║██║██║ ██╔╝██║
+██╔██╗ ██║███████║██╔██╗ ██║██║   ██║██║ █╗ ██║██║█████╔╝ ██║
+██║╚██╗██║██╔══██║██║╚██╗██║██║   ██║██║███╗██║██║██╔═██╗ ██║
+██║ ╚████║██║  ██║██║ ╚████║╚██████╔╝╚███╔███╔╝██║██║  ██╗██║
+╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═╝╚═╝
+
 This is "NanoWiki", NanoWiki is a program, it's written in go;
 what it does is that it connects to localhost:8080 and all pages are 
 locally hosted as "*.txt" files. Soooo, any "*.txt" file can be loaded
