@@ -26,7 +26,7 @@ type Page struct {
 	Body  []byte
 }
 
-/* Page handlers. */
+/* Page attributes. */
 func (p *Page) save() error {
 	filename := p.Title + ".txt"
 	return os.WriteFile(filename, p.Body, 0600)
@@ -41,6 +41,7 @@ func loadPage(title string) (*Page, error) {
 	return &Page{Title: title, Body: body}, nil
 }
 
+/* Page/Web Handlers */
 func viewHandler(w http.ResponseWriter, r *http.Request, title string) {
 	p, err := loadPage(title)
 	if err != nil {
@@ -69,6 +70,7 @@ func saveHandler(w http.ResponseWriter, r *http.Request, title string) {
 	http.Redirect(w, r, "/view/"+title, http.StatusFound)
 }
 
+/* Template handler for all of the different modes. */
 var templates = template.Must(template.ParseFiles("edit.html", "view.html")) /* External files. */
 
 func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
@@ -80,6 +82,7 @@ func renderTemplate(w http.ResponseWriter, tmpl string, p *Page) {
 
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
+/* This function is basically glue for all of the other functions. */
 func makeHandler(fn func(http.ResponseWriter, *http.Request, string)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		m := validPath.FindStringSubmatch(r.URL.Path)
