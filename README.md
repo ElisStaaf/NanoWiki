@@ -12,7 +12,7 @@ cd <NanoWiki directory>
 ```
 This will run the "NanoWiki.exe" file. Then, open your browser of choice,
 go to the url: 
-```
+```batch
 localhost:8080/view/<Page>
 ```
 If the page
