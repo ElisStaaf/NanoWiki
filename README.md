@@ -1,25 +1,20 @@
-```
-                       ███╗   ██╗ █████╗ ███╗   ██╗ ██████╗ ██╗    ██╗██╗██╗  ██╗██╗                                                  
-                       ████╗  ██║██╔══██╗████╗  ██║██╔═══██╗██║    ██║██║██║ ██╔╝██║                                                  
-                       ██╔██╗ ██║███████║██╔██╗ ██║██║   ██║██║ █╗ ██║██║█████╔╝ ██║                                                  
-                       ██║╚██╗██║██╔══██║██║╚██╗██║██║   ██║██║███╗██║██║██╔═██╗ ██║                                                  
-                       ██║ ╚████║██║  ██║██║ ╚████║╚██████╔╝╚███╔███╔╝██║██║  ██╗██║                                                  
-                       ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝  ╚══╝╚══╝ ╚═╝╚═╝  ╚═╝╚═╝                                                  
-```
+[![Version](https://img.shields.io/badge/version-v1.1.0-2dd245?style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)
+[![Build](https://img.shields.io/badge/build%20(fedora)-passing-blue?logo=fedora&style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)
+[![Lang](https://img.shields.io/badge/language-golang-20c9df?logo=go&style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)  
 This is "NanoWiki", NanoWiki is a program, it's written in go;
 what it does is that it connects to localhost:8080 and all pages are 
-locally hosted as "*.txt" files. Soooo, any "*.txt" file can be loaded
+locally hosted as `*.txt` files. Soooo, any `*.txt` file can be loaded
 by NanoWiki! 
 
 ## How to use
 To use simply:
-```batch
+```bash
 cd <NanoWiki directory>
 ./NanoWiki
 ```
-This will run the "NanoWiki.exe" file. Then, open your browser of choice,
+This will run the "NanoWiki" file. Then, open your browser of choice,
 go to the url: 
-```batch
+```bash
 localhost:8080/view/<Page>
 ```
 If the page
