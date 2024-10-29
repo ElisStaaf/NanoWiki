@@ -1,8 +1,8 @@
 /* Main file for NanoWiki,
-* this is like "The Powerhouse"
-* of the NanoWiki (or alternatively
-* the bane of your existence).
-*/
+ * this is like "The Powerhouse"
+ * of the NanoWiki (or alternatively
+ * the bane of your existence).
+ */
 
 /* go:build ignore */
 
@@ -17,10 +17,10 @@ import (
 )
 
 /* Page struct, we need 
-* the body to be a []byte
-* because that's what the
-* modules expect of us.
-*/
+ * the body to be a []byte
+ * because that's what the
+ * modules expect of us.
+ */
 type Page struct {
 	Title string
 	Body  []byte
@@ -95,8 +95,8 @@ func makeHandler(fn func(http.ResponseWriter, *http.Request, string)) http.Handl
 }
 
 /* Main function; this straps all of is 
-* trash together, to create something functional.
-*/
+ * trash together, to create something functional.
+ */
 func main() {
 	http.HandleFunc("/view/", makeHandler(viewHandler))
 	http.HandleFunc("/edit/", makeHandler(editHandler))
