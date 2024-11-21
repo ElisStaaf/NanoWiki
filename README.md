@@ -6,11 +6,12 @@ what it does is that it connects to localhost:8080 and all pages are
 locally hosted as `*.txt` files. Soooo, any `*.txt` file can be loaded
 by NanoWiki! 
 
-## How to use
+## How to use 
 To use simply:
 ```bash
 cd <NanoWiki directory>
-./NanoWiki
+make
+./nanowiki
 ```
 This will run the "NanoWiki" file. Then, open your browser of choice,
 go to the url: 
