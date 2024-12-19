@@ -1,6 +1,12 @@
+> [!WARNING]
+> This project has been *completely* abandoned,  
+> it will never be updated again and I have basically  
+> disowned it, don't message me about this.
+
 [![Version](https://img.shields.io/badge/version-v1.1.0-2dd245?style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)
 [![Build](https://img.shields.io/badge/build%20(fedora)-passing-blue?logo=fedora&style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)
 [![Lang](https://img.shields.io/badge/language-golang-20c9df?logo=go&style=for-the-badge)](https://github.com/ElisStaaf/NanoWiki)  
+
 This is "NanoWiki", NanoWiki is a program, it's written in go;
 what it does is that it connects to localhost:8080 and all pages are 
 locally hosted as `*.txt` files. Soooo, any `*.txt` file can be loaded
